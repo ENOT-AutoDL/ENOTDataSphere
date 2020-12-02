@@ -45,7 +45,6 @@ To start enot_pretrain you should:
 * When all configs, learning procedure and paths in 'mmdet_tools/run_enot_search.py' are ready, from jupyter notebook just call 'run_enot_search' function from 'mmdet_tools/run_enot_search.py'. If you can set up parameter 'latency_loss_weight' to vary complexity of model to find, bigger 'latency_loss_weight' - more lightweight model you will find;
 
 #### 4 - run tune finded model
-* Export best finded model;
 * Prepair config 'mmdet_tools/configs/_base_/models/mobilenet_from_search_space_mask.py', set indeces of best models from search phase. And 'mmdet_tools/configs/wider_face/mobilenet_from_search_space_mask.py' here you should set path to dataset, augmentations, optimizer, learning rate;
 * Export weights(.pth file) of best model. Example you can see in 'mmdet_tools/build_searched_arch_ckpt.py';
 * Call train from 'mmdet_tools/tools/train_baseline.py'. set parameter 'config' - path to 'mmdet_tools/configs/wider_face/mobilenet_from_search_space_mask.py', 
