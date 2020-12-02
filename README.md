@@ -32,7 +32,19 @@ Set 'ann_file' parameter for train, test and val dictionaries with paths to your
 * If you want to change searchspace you should do it in 'mmdet_tools/configs/_base_/models/search_space_ssd_masks.py'
 * For enot_pretrain phase you should change paths to your dataset in 'mmdet_tools/configs/wider_face/search_space_ssd_masks.py', also you can set here augmentations you want.
 * For enot_search phase you should change paths to your dataset in 'mmdet_tools/configs/wider_face/search_space_ssd_masks_search.py', dataset and augmentations should be the same like in pretrain phase!
-####### Detailed information about MMDetection config system you can find here - https://mmdetection.readthedocs.io/en/latest/tutorials/config.html
+###### Detailed information about MMDetection config system you can find here - https://mmdetection.readthedocs.io/en/latest/tutorials/config.html
+
+##### 3 - run enot_pretrain, enot_search phases
+To start enot_pretrain you should:
+* Prepair config(see 2);
+* In 'mmdet_tools/run_enot_pretrain.py' in pretrain_cfg dictionary you should change: 'epochs' - number of epochs, 'mmdet_config_path' - path to 'mmdet_tools/configs/_base_/models/search_space_ssd_masks.py', 'experiment_dir' - path to save checkpoints. In 'enot_pretrain' function you can change type of optimizer, learning rate, set shceduler, and batch size;
+* When all configs, learning procedure and paths in 'mmdet_tools/run_enot_pretrain.py' are ready, from jupyter notebook just call 'run_enot_pretrain' function from 'mmdet_tools/run_enot_pretrain.py';
+* Prepair config(see 2);
+* Choose best checkpoint from pretrain phase;
+* In 'mmdet_tools/run_enot_search.py' in pretrain_cfg dictionary you should change: 'epochs' - number of epochs, 'mmdet_config_path' - path to 'mmdet_tools/configs/_base_/models/search_space_ssd_masks.py', 'experiment_dir' - path to save checkpoints, 'pretrain_checkpoint_path' - path to best checkpoint from pretrain phase. In 'enot_search' function you can change type of optimizer, learning rate, set shceduler, and batch size;
+* When all configs, learning procedure and paths in 'mmdet_tools/run_enot_search.py' are ready, from jupyter notebook just call 'run_enot_search' function from 'mmdet_tools/run_enot_search.py'. If you can set up parameter 'latency_loss_weight' to vary complexity of model to find, bigger 'latency_loss_weight' - more lightweight model you will find;
+
+##### 4 - run tune finded model
 
 
 
