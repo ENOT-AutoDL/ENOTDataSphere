@@ -28,7 +28,7 @@ https://yadi.sk/i/hE05IF9-OEwvKg
 
 ### Train custom dataset with MMDET+ENOT
 ##### To train your custom dataset for detection and use optimization framework ENOT you should:
-- 1
+1 - Prepaire your dataset to MSCOCO format
 
 
 ### Custom ENOT usage:
