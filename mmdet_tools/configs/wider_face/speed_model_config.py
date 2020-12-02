@@ -7,7 +7,7 @@ _base_ = [
 input_size = 300
 num_classes = 2
 dataset_type = 'CocoDataset'
-data_root = '/home/jupyter/work/resources/mmdet_tools/data/masks/'
+data_root = '/home/jupyter/work/resources/ENOTDataSphere/mmdet_tools/data/masks/'
 classes = ('face', 'mask')
 
 model = dict(

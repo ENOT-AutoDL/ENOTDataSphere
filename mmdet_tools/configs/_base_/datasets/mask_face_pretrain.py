@@ -1,5 +1,5 @@
 dataset_type = 'CocoDataset'
-data_root = '/home/jupyter/work/resources/mmdet_tools/data/masks/'
+data_root = '/home/jupyter/work/resources/ENOTDataSphere/mmdet_tools/data/masks/'
 classes = ('face', 'mask')
 img_norm_cfg = dict(
     mean=[127.5, 127.5, 127.5],
@@ -50,8 +50,7 @@ data = dict(
     ),
     test=dict(
         type='CocoDataset',
-        ann_file=data_root + 'test_synth_real_augmented_filtred_08.json', #'test_all_real.json',
-        img_prefix=data_root,
+        ann_file=data_root + 'test_synth_real_augmented_filtred_08.json',
         classes=classes,
         pipeline=test_pipeline,
     ),
