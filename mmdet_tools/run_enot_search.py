@@ -27,11 +27,11 @@ search_cfg = {
   'epochs': 2,
   'dataloader_jobs': 4,
   'mmdet_config_path': './mmdet_tools/configs/wider_face/search_space_ssd_masks_search.py',
-  'experiment_dir': './ssd_search_space_pretrain_adam/',
-  'pretrain_checkpoint_path':'/home/jupyter/work/resources/models/pretrain_3_masks.pth' #'./mmdetection_expasoft/ssd_search_space_pretrain_adam/experiments/conv_pretrain/checkpoint-3.pth'
+  'experiment_dir': '/home/jupyter/work/resources/ssd_search_space_pretrain_adam/',
+  'pretrain_checkpoint_path':'/home/jupyter/work/resources/ENOTDataSphere/models/pretrain_3_masks.pth'
 }
 experiment_cfg = {
-  'dir': './mmdetection_expasoft/experiments/conv_search',
+  'dir': 'experiments/conv_search',
 }
 
 
