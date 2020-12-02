@@ -51,7 +51,7 @@ To start enot_pretrain you should:
 'full_pretrained_model' - path to exported .pth file;
 
 
-#### Tutorials for ENOT framework you can find here:
+## Tutorials for ENOT framework you can find here:
 https://github.com/ENOT-AutoDL/ENOT_Tutorials
 
 
