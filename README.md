@@ -4,7 +4,7 @@ This is a repository with examples of usage ENOT framework in Yandex DataSphere.
 #### Tutorials for ENOT framework you can find here:
 https://github.com/ENOT-AutoDL/ENOT_Tutorials
 
-### Init project
+### To use ENOT+MMDET for mask detection problem:
 * Create your own project in Yandex DataSphere.
 * Clone this project into your DataSphere project.
 * Download models from the link below and put it in root directory of project: 
