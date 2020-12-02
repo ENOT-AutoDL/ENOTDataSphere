@@ -27,8 +27,8 @@ parser.add_argument(
 pretrain_cfg = {
   'epochs': 3,
   'dataloader_jobs': 4,
-  'mmdet_config_path': '/home/jupyter/work/resources/mmdet_tools/configs/wider_face/search_space_ssd_masks.py',
-  'experiment_dir': '/home/jupyter/work/resources/ssd_search_space_pretrain_adam/',
+  'mmdet_config_path': '/home/jupyter/work/resources/ENOTDataSphere/mmdet_tools/configs/wider_face/search_space_ssd_masks.py',
+  'experiment_dir': '/home/jupyter/work/resources/ENOTDataSphere/ssd_search_space_pretrain_adam/',
 }
 
 experiment_cfg = {

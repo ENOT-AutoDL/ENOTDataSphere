@@ -26,8 +26,8 @@ parser.add_argument(
 search_cfg = {
   'epochs': 2,
   'dataloader_jobs': 4,
-  'mmdet_config_path': './mmdet_tools/configs/wider_face/search_space_ssd_masks_search.py',
-  'experiment_dir': '/home/jupyter/work/resources/ssd_search_space_pretrain_adam/',
+  'mmdet_config_path': '/home/jupyter/work/resources/ENOTDataSphere/mmdet_tools/configs/wider_face/search_space_ssd_masks_search.py',
+  'experiment_dir': '/home/jupyter/work/resources/ENOTDataSphere/ssd_search_space_pretrain_adam/',
   'pretrain_checkpoint_path':'/home/jupyter/work/resources/ENOTDataSphere/models/pretrain_3_masks.pth'
 }
 experiment_cfg = {
