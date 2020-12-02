@@ -1,5 +1,6 @@
 # ENOTDataSphere
-This is a repository with examples of usage ENOT framework in Yandex DataSphere.
+This is a repository with ENOT framework usage examples in Yandex DataSphere.
+
 
 #### Tutorials for ENOT framework you can find here:
 https://github.com/ENOT-AutoDL/ENOT_Tutorials
@@ -26,8 +27,8 @@ https://yadi.sk/i/hE05IF9-OEwvKg
 
 
 ### Train custom dataset with MMDET+ENOT
-To train your custom dataset for detection and use optimization framework ENOT you should:
-*
+##### To train your custom dataset for detection and use optimization framework ENOT you should:
+- 1
 
 
 ### Custom ENOT usage:
