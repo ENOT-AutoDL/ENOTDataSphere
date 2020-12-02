@@ -1,11 +1,6 @@
 # ENOTDataSphere
 This is a repository with ENOT framework usage examples in Yandex DataSphere.
 
-
-#### Tutorials for ENOT framework you can find here:
-https://github.com/ENOT-AutoDL/ENOT_Tutorials
-
-
 ### Install
 * Go to "install" folder;
 * Open Install.ipynb ;
@@ -28,11 +23,22 @@ https://yadi.sk/i/hE05IF9-OEwvKg
 
 ### Train custom dataset with MMDET+ENOT
 ##### To train your custom dataset for detection and use optimization framework ENOT you should:
-1 - Prepaire your dataset to MSCOCO format
+###### 1 - Prepaire your dataset to COCO annotation format. 
+* You should have 3 .json files, like *. train.json, test.json, val.json .* and 3 folders(train, test, val) with images. Make folder(like 'my_dataset_name') and copy all these files into it. About COCO annotation format you can read here - https://mmdetection.readthedocs.io/en/latest/2_new_data_model.html
+* In 'mmdet_tools' make folder 'data' and copy your directory  with dataset('my_dataset_name') to 'data'.
+###### 2 - Prepaire configs for ENOT_Pretrain, ENOT_search and tune phases.
+* In 'mmdet_tools/configs/_base_/datasets' in files 'mask_face.py' and 'mask_face_pretrain.py' set to variable 'data_root' path to your dataset.
+Set 'ann_file' parameter for train, test and val dictionaries with paths to yours .json files(train.json, test.json, val.json)
+* If you want to change searchspace you should do it in 'mmdet_tools/configs/_base_/models/search_space_ssd_masks.py'
+* For enot_pretrain phase you should change paths to your dataset in 'mmdet_tools/configs/wider_face/search_space_ssd_masks.py', also you can set here augmentations you want.
+* For enot_search phase you should change paths to your dataset in 'mmdet_tools/configs/wider_face/search_space_ssd_masks_search.py', dataset and augmentations should be the same like in pretrain phase!
+####### Detailed information about MMDetection config system you can find here - https://mmdetection.readthedocs.io/en/latest/tutorials/config.html
 
 
-### Custom ENOT usage:
+
+#### Tutorials for ENOT framework you can find here:
 https://github.com/ENOT-AutoDL/ENOT_Tutorials
+
 
 
 
