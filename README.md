@@ -21,7 +21,7 @@ https://yadi.sk/d/MwN9o5LmLi5Cvg
 https://yadi.sk/i/hE05IF9-OEwvKg
 
 
-## Train custom dataset with MMDET+ENOT
+## Train detector on custom dataset with MMDET+ENOT
 ### To train your custom dataset for detection and use optimization framework ENOT you should:
 #### 1 - Prepare your dataset to COCO annotation format. 
 * You should have 3 .json files, like *. train.json, test.json, val.json .* and 3 folders(train, test, val) with images. Make a folder(like 'my_dataset_name') and copy all these files into it. About COCO annotation format you can read here - https://mmdetection.readthedocs.io/en/latest/2_new_data_model.html
