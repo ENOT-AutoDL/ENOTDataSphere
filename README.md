@@ -9,7 +9,7 @@ https://github.com/ENOT-AutoDL/ENOT_Tutorials
 * Go to "install" folder;
 * Open Install.ipynb ;
 * Execute all the cells one by one;
-* Now you can open all Jupyter Notebooks and execute them;
+* Now you can use all Jupyter Notebooks from this repository;
 
 
 ### To reproduce results from webinar:
@@ -23,5 +23,13 @@ https://yadi.sk/d/MwN9o5LmLi5Cvg
 https://yadi.sk/i/hE05IF9-OEwvKg
 
 
-### Train custom dataset
+### Train custom dataset with MMDET+ENOT
+To train your custom dataset for detection and use optimization framework ENOT you should:
+*
+
+
+### Custom ENOT usage:
 https://github.com/ENOT-AutoDL/ENOT_Tutorials
+
+
+
