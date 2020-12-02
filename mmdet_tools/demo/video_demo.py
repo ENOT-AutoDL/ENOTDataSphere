@@ -46,7 +46,7 @@ def eval_video_stream(video_path, model_path, config_path, device):
 	        video.set(cv2.CAP_PROP_POS_FRAMES, current_frame_num)
 	        _, frame = video.read()
 	        if frame is None:
-	                IPython.display.clear_output(wait=False)
+	            IPython.display.clear_output(wait=False)
 	            print('mean fps:', np.mean(fps_s))
 	            break
 	        show_image(frame, model, fps_s)
