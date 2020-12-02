@@ -45,7 +45,10 @@ To start enot_pretrain you should:
 * When all configs, learning procedure and paths in 'mmdet_tools/run_enot_search.py' are ready, from jupyter notebook just call 'run_enot_search' function from 'mmdet_tools/run_enot_search.py'. If you can set up parameter 'latency_loss_weight' to vary complexity of model to find, bigger 'latency_loss_weight' - more lightweight model you will find;
 
 ##### 4 - run tune finded model
-
+* Export best finded model;
+* Prepair 
+* Export weights of best model. Example you can see in 'mmdet_tools/build_searched_arch_ckpt.py'
+ mmdet_tools.tools.export_searched_model import extract_model_ckpt_from_search_space
 
 
 #### Tutorials for ENOT framework you can find here:
