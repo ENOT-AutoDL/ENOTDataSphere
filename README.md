@@ -1,5 +1,8 @@
 # ENOTDataSphere
-This is a repository with examples of usage ENOT framework in Yandex DataSphere
+This is a repository with examples of usage ENOT framework in Yandex DataSphere.
+
+#### More examples you can find here:
+https://github.com/ENOT-AutoDL/ENOT_Tutorials
 
 ### Init project
 * Create your own project in Yandex DataSphere.
