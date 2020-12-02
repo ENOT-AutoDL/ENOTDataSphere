@@ -8,14 +8,14 @@ This is a repository with ENOT framework usage examples in Yandex DataSphere.
 * Now you can use all Jupyter Notebooks from this repository;
 
 
-## To reproduce results from webinar:
+## To reproduce results from the webinar:
 * Create your own project in Yandex DataSphere - https://cloud.yandex.ru/services/datasphere 
 * Clone this repository into your DataSphere project (Git -> Clone);
 * Download models from the link below, unzip file(Snippets -> Extract ZIP file.py) \
-and put it in the root directory of the project(so path to models should be '/home/jupyter/work/resources/ENOTDataSphere/models/'): 
+and put it in the root directory of the project(so the path to models should be '/home/jupyter/work/resources/ENOTDataSphere/models/'): 
 https://yadi.sk/d/nbaV1N1tQMSPpg
 * Download test dataset from the link below, unzip it(Snippets -> Extract ZIP file.py) \
-and put "data" folder into "mmdet_tools" folder(so path to your data should be '/home/jupyter/work/resources/ENOTDataSphere/mmdet_tools/data/'):
+and put "data" folder into "mmdet_tools" folder(so the path to your data should be '/home/jupyter/work/resources/ENOTDataSphere/mmdet_tools/data/'):
 https://yadi.sk/d/MwN9o5LmLi5Cvg
 * Download test video from this link, create folder "video" and put downloaded video there:
 https://yadi.sk/i/hE05IF9-OEwvKg
@@ -24,8 +24,8 @@ https://yadi.sk/i/hE05IF9-OEwvKg
 ## Train custom dataset with MMDET+ENOT
 ### To train your custom dataset for detection and use optimization framework ENOT you should:
 #### 1 - Prepare your dataset to COCO annotation format. 
-* You should have 3 .json files, like *. train.json, test.json, val.json .* and 3 folders(train, test, val) with images. Make folder(like 'my_dataset_name') and copy all these files into it. About COCO annotation format you can read here - https://mmdetection.readthedocs.io/en/latest/2_new_data_model.html
-* In 'mmdet_tools' make folder 'data' and copy your directory  with dataset('my_dataset_name') to 'data'.
+* You should have 3 .json files, like *. train.json, test.json, val.json .* and 3 folders(train, test, val) with images. Make a folder(like 'my_dataset_name') and copy all these files into it. About COCO annotation format you can read here - https://mmdetection.readthedocs.io/en/latest/2_new_data_model.html
+* In 'mmdet_tools' make a folder 'data' and copy your directory  with dataset('my_dataset_name') to 'data'.
 #### 2 - Prepare configs for ENOT_Pretrain, ENOT_search and tune phases.
 * In 'mmdet_tools/configs/_base_/datasets' in files 'mask_face.py' and 'mask_face_pretrain.py' set to variable 'data_root' path to your dataset.
 Set 'ann_file' parameter for train, test and val dictionaries with paths to yours .json files(train.json, test.json, val.json)
@@ -46,8 +46,8 @@ To start enot_pretrain you should:
 
 #### 4 - run tune found model
 * Prepare config 'mmdet_tools/configs/_base_/models/mobilenet_from_search_space_mask.py', set indices of best models from search phase. And 'mmdet_tools/configs/wider_face/mobilenet_from_search_space_mask.py' here you should set path to dataset, augmentations, optimizer, learning rate;
-* Export weights(.pth file) of best model. Example you can see in 'mmdet_tools/build_searched_arch_ckpt.py';
-* Call train from 'mmdet_tools/tools/train_baseline.py'. set parameter 'config' - path to 'mmdet_tools/configs/wider_face/mobilenet_from_search_space_mask.py', 
+* Export weights(.pth file) of the best model. Example you can see in 'mmdet_tools/build_searched_arch_ckpt.py';
+* Call train from 'mmdet_tools/tools/train_baseline.py'. Set parameter 'config' - path to 'mmdet_tools/configs/wider_face/mobilenet_from_search_space_mask.py', 
 'full_pretrained_model' - path to exported .pth file;
 
 
