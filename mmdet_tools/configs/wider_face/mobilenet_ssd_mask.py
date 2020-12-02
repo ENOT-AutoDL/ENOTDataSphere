@@ -8,7 +8,7 @@ _base_ = [
 input_size = 300
 num_classes = 2
 dataset_type = 'CocoDataset'
-data_root = '/home/jupyter/work/resources/mmdet_tools/data/masks/'
+data_root = '/home/jupyter/work/resources/ENOTDataSphere/mmdet_tools/data/masks/'
 classes = ('face', 'mask')
 
 model = dict(
@@ -63,7 +63,7 @@ data = dict(
         times=4,
         dataset=dict(
             type=dataset_type,
-            ann_file=data_root + 'train_synth_real_augmented_filtred.json',
+            ann_file=data_root + 'test_synth_real_augmented_filtred_08.json',
             img_prefix=data_root,
             classes=classes,
             pipeline=train_pipeline,
