@@ -44,7 +44,6 @@ def make_pretrain_args(tmp_dir, pretrain_cfg_, experiment_cfg_):
         rank=0,
         local_rank=0,
         seed=0,
-        checkpoint_path='/home/jupyter/work/resources/pretrain_mask.pth',
     )
 
 
