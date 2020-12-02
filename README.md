@@ -6,7 +6,7 @@ https://github.com/ENOT-AutoDL/ENOT_Tutorials
 
 ### Init project
 * Create your own project in Yandex DataSphere.
-* Copy this project into your DataSphere project.
+* Clone this project into your DataSphere project.
 * Download models from the link below and put it in root directory of project: 
 https://drive.google.com/file/d/1x1qxQDSniZu_z8aLe01ZStikTMgDt9Xx/view?usp=sharing
 * Download dataset from the link below and put it into "mmdet_tools" floder: 
