@@ -15,7 +15,7 @@ This is a repository with ENOT framework usage examples in Yandex DataSphere.
 and put it in the root directory of the project(so the path to models should be './ENOTDataSphere/models/base_model.pth'): 
 https://yadi.sk/d/nbaV1N1tQMSPpg
 * Download test dataset from the link below, unzip it(Snippets -> Extract ZIP file.py) \
-and put "data" folder into "mmdet_tools" folder(so the path to your data should be './ENOTDataSphere/mmdet_tools/data/'):
+and create "data" folder in "mmdet_tools" folder and copy unziped folder('masks') in './ENOTDataSphere/mmdet_tools/data/'(so the path to your data should be './ENOTDataSphere/mmdet_tools/data/'):
 https://yadi.sk/d/MwN9o5LmLi5Cvg
 * Download test video from this link, create folder "video" and put downloaded video there:
 https://yadi.sk/i/hE05IF9-OEwvKg
