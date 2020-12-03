@@ -12,10 +12,10 @@ This is a repository with ENOT framework usage examples in Yandex DataSphere.
 * Create your own project in Yandex DataSphere - https://cloud.yandex.ru/services/datasphere 
 * Clone this repository into your DataSphere project (Git -> Clone);
 * Download models from the link below, unzip file(Snippets -> Extract ZIP file.py) \
-and put it in the root directory of the project(so the path to models should be '/home/jupyter/work/resources/ENOTDataSphere/models/'): 
+and put it in the root directory of the project(so the path to models should be './ENOTDataSphere/models/'): 
 https://yadi.sk/d/nbaV1N1tQMSPpg
 * Download test dataset from the link below, unzip it(Snippets -> Extract ZIP file.py) \
-and put "data" folder into "mmdet_tools" folder(so the path to your data should be '/home/jupyter/work/resources/ENOTDataSphere/mmdet_tools/data/'):
+and put "data" folder into "mmdet_tools" folder(so the path to your data should be './ENOTDataSphere/mmdet_tools/data/'):
 https://yadi.sk/d/MwN9o5LmLi5Cvg
 * Download test video from this link, create folder "videos" and put downloaded video there:
 https://yadi.sk/i/hE05IF9-OEwvKg
