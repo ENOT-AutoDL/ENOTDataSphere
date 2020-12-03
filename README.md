@@ -20,6 +20,11 @@ https://yadi.sk/d/MwN9o5LmLi5Cvg
 * Download test video from this link, create folder "video" and put downloaded video there:
 https://yadi.sk/i/hE05IF9-OEwvKg
 
+##### Now you can use all notebooks in this repository
+* demo_video.ipynb - demo of masks detection on video. You can download your own video, change path to the video and detect masks;
+* pretrain_search.ipynb - in this notebook you can find examples of enot_pretrain, enot_search phases and get test metrics on the dataset;
+* train_baseline.ipynb - example of train baseline model with MMDetection;
+
 
 ## Train detector on custom dataset with MMDET+ENOT
 ### To train your custom dataset for detection and use optimization framework ENOT you should:
