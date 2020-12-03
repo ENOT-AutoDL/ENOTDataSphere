@@ -17,7 +17,7 @@ https://yadi.sk/d/nbaV1N1tQMSPpg
 * Download test dataset from the link below, unzip it(Snippets -> Extract ZIP file.py) \
 and put "data" folder into "mmdet_tools" folder(so the path to your data should be './ENOTDataSphere/mmdet_tools/data/'):
 https://yadi.sk/d/MwN9o5LmLi5Cvg
-* Download test video from this link, create folder "videos" and put downloaded video there:
+* Download test video from this link, create folder "video" and put downloaded video there:
 https://yadi.sk/i/hE05IF9-OEwvKg
 
 
